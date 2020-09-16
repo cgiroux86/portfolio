@@ -7,17 +7,17 @@ import Profile from "../images/profile.jpg";
 export default function Header() {
   return (
     <div>
-      <div className="img_wrapper">
-        <img className="profile_pic" src={Profile}></img>
+      <div className="header_wrapper">
+        <img className="header_pic" src={Profile}></img>
         <div className="icons_wrapper">
           <Link to="/contact">
             <FontAwesomeIcon className="icon" icon={faPhone} />
             <p>Contact</p>
           </Link>
-          <div>
+          <Link to="/projects">
             <FontAwesomeIcon className="icon" icon={faDesktop} />
             <p>Projects</p>
-          </div>
+          </Link>
           <div>
             <FontAwesomeIcon className="icon" icon={faFile} />
             <p>Resume</p>

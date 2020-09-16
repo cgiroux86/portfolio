@@ -13,7 +13,7 @@ export default function Contact() {
   }, []);
   return (
     <div style={{ height: "100%", width: "80%", margin: "0 auto" }}>
-      <div>
+      {/* <div>
         <div className="img_wrapper">
           <img className="header_pic" src={Profile}></img>
           <div className="icons_wrapper">
@@ -31,7 +31,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="contact_card">
         <h2 className="contact_title">Contact</h2>
         <div className="contact_me">
@@ -60,11 +60,14 @@ export default function Contact() {
             defaultZoom={10}
           ></GoogleMapReact>
         </div>
-        <div>
-          <h2>Connect</h2>
-          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-            <FontAwesomeIcon icon={faLinkedinIn} />
-            <FontAwesomeIcon icon={faGithub} />
+        <div className="connect_container">
+          <h2 className="connect_title">Connect</h2>
+          <div className="connect">
+            <FontAwesomeIcon
+              style={{ color: "navy", fontSize: "1.5rem" }}
+              icon={faLinkedinIn}
+            />
+            <FontAwesomeIcon style={{ fontSize: "1.5rem" }} icon={faGithub} />
           </div>
         </div>
       </div>
