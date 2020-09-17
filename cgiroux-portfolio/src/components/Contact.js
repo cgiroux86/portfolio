@@ -16,7 +16,7 @@ export default function Contact() {
     gsap.from(".contact_card", { opacity: 0, y: 200, x: 200, duration: 0.4 });
   }, []);
   return (
-    <div style={{ height: "100%", width: "80%", margin: "0 auto" }}>
+    <div className="contact_wrapper">
       <div className="contact_card">
         <h2 className="contact_title">Contact</h2>
         <div className="contact_me">

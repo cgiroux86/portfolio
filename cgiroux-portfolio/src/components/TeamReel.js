@@ -22,7 +22,7 @@ export default function TeamReel() {
               width: "100%",
             }}
           >
-            <video width="500" height="400" loop autoPlay>
+            <video width="95%" height="95%" loop autoPlay>
               <source src={sortViz1} type="video/mp4"></source>
             </video>
           </div>

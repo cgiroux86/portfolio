@@ -1,5 +1,5 @@
 import React from "react";
-import sortViz1 from "../images/sortviz1.mov";
+import sleepTracker from "../images/sleepTracker.mov";
 
 export default function SleepTracker() {
   return (
@@ -22,8 +22,8 @@ export default function SleepTracker() {
               width: "100%",
             }}
           >
-            <video width="500" height="400" loop autoPlay>
-              <source src={sortViz1} type="video/mp4"></source>
+            <video width="95%" height="95%" loop autoPlay>
+              <source src={sleepTracker} type="video/mp4"></source>
             </video>
           </div>
           <div style={{ width: "90%", margin: "2% auto", fontSize: "1rem" }}>

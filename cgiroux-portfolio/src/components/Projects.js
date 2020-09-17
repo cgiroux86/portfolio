@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import singleSort from "../images/singleSort.png";
-import doubleSort from "../images/doubleSort.png";
-import sortViz1 from "../images/sortviz1.mov";
 import { gsap } from "gsap";
 import SortViz from "./SortViz";
 import TeamReel from "./TeamReel";
 import SleepTracker from "./SleepTracker";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronCircleLeft,
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
@@ -36,11 +32,12 @@ export default function Projects() {
   return (
     <div className="projects_container">
       <div className="projects_card">
+        <h2 className="contact_title">Projects</h2>
         <div
           style={{
             display: "flex",
             justifyContent: "space-evenly",
-            width: "30%",
+            width: "40%",
             fontSize: "2rem",
             margin: "2% auto",
           }}

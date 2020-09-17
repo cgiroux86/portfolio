@@ -61,7 +61,7 @@
   width: 50%;
   font-size: 1rem;
   position: relative;
-  bottom: 100px;
+  bottom: 80px;
   left: 200px;
   color: rgb(101, 101, 101);
   font-weight: bold;
@@ -112,7 +112,7 @@
 }
 
 .map_wrapper {
-  height: 30%;
+  height: 40%;
   width: 100%;
   margin: 5% auto;
 }
@@ -215,13 +215,15 @@
   display: none;
 }
 
+.conact_wrapper {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 500px) {
   .img_wrapper {
-    /* display: flex; */
-    /* flex-direction: column; */
     height: 80vh;
-    /* justify-content: center;
-    align-items: center; */
   }
   .icons_wrapper {
     display: flex;
@@ -229,10 +231,9 @@
     width: 80%;
     font-size: 1rem;
     position: absolute;
-    bottom: 50px;
+    bottom: 50%;
     left: 40px;
     color: rgb(101, 101, 101);
-    border: 2px solid lime;
     font-weight: bold;
     margin: 0 auto;
   }
@@ -278,6 +279,40 @@
   }
   .home_wrapper {
     display: none;
+  }
+
+  .header_wrapper {
+    width: 100%;
+  }
+  .header_pic {
+    width: 100%;
+  }
+  .contact_wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .contact_card {
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .contact_type {
+    height: 100%;
+    width: 90vw;
+    margin: 1% auto;
+    justify-content: space-evenly;
+  }
+  .contact_me {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+  .contact_title {
+    margin: 5%;
+  }
+  .header_wrapper {
+    height: 50vh;
   }
 }
 
