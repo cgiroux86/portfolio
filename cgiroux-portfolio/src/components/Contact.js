@@ -3,35 +3,20 @@ import GoogleMapReact from "google-map-react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedinIn,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import Profile from "../images/profile.jpg";
 import { gsap } from "gsap";
 
 export default function Contact() {
   useEffect(() => {
-    gsap.from(".contact_card", { opacity: 0, y: 200, duration: 0.4 });
+    gsap.from(".contact_card", { opacity: 0, y: 200, x: 200, duration: 0.4 });
   }, []);
   return (
     <div style={{ height: "100%", width: "80%", margin: "0 auto" }}>
-      {/* <div>
-        <div className="img_wrapper">
-          <img className="header_pic" src={Profile}></img>
-          <div className="icons_wrapper">
-            <Link to="/contact">
-              <FontAwesomeIcon className="icon" icon={faPhone} />
-              <p>Contact</p>
-            </Link>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faDesktop} />
-              <p>Projects</p>
-            </div>
-            <div>
-              <FontAwesomeIcon className="icon" icon={faFile} />
-              <p>Resume</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="contact_card">
         <h2 className="contact_title">Contact</h2>
         <div className="contact_me">
@@ -68,6 +53,7 @@ export default function Contact() {
               icon={faLinkedinIn}
             />
             <FontAwesomeIcon style={{ fontSize: "1.5rem" }} icon={faGithub} />
+            <FontAwesomeIcon icon={faTwitter} style={{ color: "babyblue" }} />
           </div>
         </div>
       </div>
