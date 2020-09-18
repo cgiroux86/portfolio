@@ -19,8 +19,8 @@ export default function MobileMain() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "80%",
-            width: "80%",
+            height: "70%",
+            width: "70%",
             margin: "0 auto",
             justifyContent: "space-between",
           }}
@@ -33,26 +33,33 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
-            {/* <div>
-              <img width="80%" height="80%" src={portfolio}></img>
-            </div> */}
-            <Avatar
+            <div
+              style={{
+                margin: "0 auto",
+                width: "70%",
+                height: "70%",
+                borderRadius: "10px",
+              }}
+            >
+              <img width="100%" height="100%" src={portfolio}></img>
+            </div>
+            {/* <Avatar
               src={portfolio}
               style={{ height: "100px", width: "75px" }}
-            />
+            /> */}
             <h3>Full Stack Developer</h3>
           </div>
-          <div style={{ width: "80%", margin: "0 auto" }}>
-            {/* <Typewriter
+          <div style={{ width: "95%", margin: "0 auto", fontSize: "0.9rem" }}>
+            <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Hi! I'm Chris Giroux.")
+
                   .typeString(
-                    " A passionate Full Stack Developer from Maryland. I have an insatiable desire to learn something new everyday!"
+                    "Hi! I'm Chris Giroux. A passionate Full Stack Developer from Maryland. I have an insatiable desire to learn something new everyday!"
                   )
                   .start();
               }}
-            /> */}
+            />
           </div>
           <div
             style={{
@@ -62,7 +69,6 @@ export default function MobileMain() {
               position: "relative",
               top: "8%",
               margin: "0 auto",
-              marginTop: "5%",
             }}
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -74,7 +80,7 @@ export default function MobileMain() {
       <div
         style={{
           position: "absolute",
-          top: "2%",
+          top: "3%",
           left: "15%",
           width: "70%",
           display: "flex",

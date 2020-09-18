@@ -259,7 +259,7 @@
   position: absolute;
   top: 40%;
   left: 22%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   color: whitesmoke;
   bottom: 22%;
@@ -295,6 +295,7 @@
   .hello_text {
     display: none;
     margin: 0 auto;
+
     /* width: 100%;
     position: absolute;
     font-size: 1.5rem;
@@ -440,8 +441,8 @@
   }
   .mobile_card {
     background: white;
-    height: 75vh;
-    width: 75vw;
+    height: 80%;
+    width: 75%;
     box-shadow: 2px 2px 2px 4px grey;
     margin: 0 auto;
     display: flex;
