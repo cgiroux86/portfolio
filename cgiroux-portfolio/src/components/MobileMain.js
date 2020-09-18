@@ -37,7 +37,7 @@ export default function MobileMain() {
             <h3>Full Stack Developer</h3>
           </div>
           <div style={{ width: "80%", margin: "0 auto" }}>
-            <Typewriter
+            {/* <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .typeString("Hi! I'm Chris Giroux.")
@@ -46,7 +46,7 @@ export default function MobileMain() {
                   )
                   .start();
               }}
-            />
+            /> */}
           </div>
           <div
             style={{
