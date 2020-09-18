@@ -11,17 +11,19 @@ export default function Header() {
         <img src={Profile}></img>
       </div>
       <div className="icons_wrapper">
-        <Link to="/contact">
+        <Link style={{ color: "white" }} to="/contact">
           <FontAwesomeIcon className="icon" icon={faPhone} />
           <p>Contact</p>
         </Link>
-        <Link to="/projects">
+        <Link style={{ color: "white" }} to="/projects">
           <FontAwesomeIcon className="icon" icon={faDesktop} />
           <p>Projects</p>
         </Link>
         <div>
-          <FontAwesomeIcon className="icon" icon={faFile} />
-          <p>Resume</p>
+          <Link style={{ color: "white" }} to="/resume">
+            <FontAwesomeIcon className="icon" icon={faFile} />
+            <p>Resume</p>
+          </Link>
         </div>
       </div>
     </div>

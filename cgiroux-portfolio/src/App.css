@@ -41,8 +41,8 @@
 .img_wrapper {
   display: flex;
   flex-direction: column;
-  height: 40vh;
-  margin-top: 15%;
+  height: 100%;
+  margin-top: 5%;
 
   justify-content: center;
   align-items: center;
@@ -50,27 +50,41 @@
 
 .profile_pic {
   /* border-radius: 10px; */
-  height: 60vh;
-  width: 40vw;
+  height: 70vh;
+  width: 60vw;
   filter: drop-shadow(5px 5px 5px #222);
 }
 
 .icons_wrapper {
   display: flex;
   justify-content: space-evenly;
-  width: 50%;
+  width: 30%;
+  color: white;
   font-size: 1rem;
   position: relative;
   bottom: 80px;
-  left: 200px;
-  color: rgb(101, 101, 101);
+
+  font-weight: bold;
+  /* margin: -5.2% auto; */
+}
+.main_icons_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  right: 35%;
+  bottom: 80px;
+
   font-weight: bold;
   /* margin: -5.2% auto; */
 }
 
 .icon {
-  font-size: 2.2rem;
-  color: rgb(101, 101, 101);
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
 }
 
 .home_img {
@@ -104,17 +118,18 @@
 .contact_card {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  box-shadow: 0 3px 3px 0px grey;
-  height: 70vh;
-  width: 39.5vw;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 2px 4px lightgray;
+  height: 100%;
+  width: 49.5vw;
   margin: 0 auto;
+  margin-bottom: 2%;
 }
 
 .map_wrapper {
-  height: 40%;
+  height: 25vh;
   width: 100%;
-  margin: 5% auto;
+  margin: 3% auto;
 }
 
 .header_pic {
@@ -172,7 +187,7 @@
   border: 1px solid black;
   box-shadow: 0 3px 3px 0px grey;
   height: 100%;
-  width: 39.5vw;
+  width: 49.5vw;
   margin: 0 auto;
 }
 
@@ -196,7 +211,7 @@
   display: block;
   /* margin-top: 10%; */
   height: 50vh;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -221,6 +236,59 @@
   margin: 0 auto;
 }
 
+.hello {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  font-size: 2.5rem;
+  color: white;
+  /* bottom: 300%; */
+  left: 60%;
+  top: 30%;
+}
+
+.learn {
+  position: absolute;
+  font-size: 2rem;
+  width: 100%;
+  color: black;
+  bottom: 150%;
+  left: 250%;
+}
+.typewriter {
+  position: absolute;
+  bottom: 10%;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .img_wrapper {
     height: 80vh;
@@ -231,8 +299,7 @@
     width: 80%;
     font-size: 1rem;
     position: absolute;
-    bottom: 50%;
-    left: 40px;
+    bottom: 60%;
     color: rgb(101, 101, 101);
     font-weight: bold;
     margin: 0 auto;
@@ -249,7 +316,7 @@
     flex-direction: column;
     border: 1px solid black;
     box-shadow: 0 3px 3px 0px grey;
-    height: 80vh;
+    height: 100%;
     width: 100vw;
     margin: 0 auto;
   }
@@ -286,6 +353,7 @@
   }
   .header_pic {
     width: 100%;
+    height: 80%;
   }
   .contact_wrapper {
     width: 100%;
