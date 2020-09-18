@@ -33,13 +33,13 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
-            <div>
+            {/* <div>
               <img width="80%" height="80%" src={portfolio}></img>
-            </div>
-            {/* <Avatar
+            </div> */}
+            <Avatar
               src={portfolio}
               style={{ height: "100px", width: "75px" }}
-            /> */}
+            />
             <h3>Full Stack Developer</h3>
           </div>
           <div style={{ width: "80%", margin: "0 auto" }}>
