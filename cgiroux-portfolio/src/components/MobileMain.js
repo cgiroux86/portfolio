@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
-import portfolio from "../images/portfolio_small.png";
+import portfolio from "../images/avatar.png";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
@@ -33,7 +33,13 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
-            <Avatar src={portfolio} style={{ height: "75px", width: "75px" }} />
+            <div>
+              <img width="80%" height="80%" src={portfolio}></img>
+            </div>
+            {/* <Avatar
+              src={portfolio}
+              style={{ height: "100px", width: "75px" }}
+            /> */}
             <h3>Full Stack Developer</h3>
           </div>
           <div style={{ width: "80%", margin: "0 auto" }}>
