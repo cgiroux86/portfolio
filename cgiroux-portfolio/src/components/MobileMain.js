@@ -2,6 +2,13 @@ import React from "react";
 import { Avatar } from "@material-ui/core";
 import portfolio from "../images/portfolio.png";
 import Typewriter from "typewriter-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function MobileMain() {
   return (
@@ -33,14 +40,6 @@ export default function MobileMain() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString("Hi! I'm Chris Giroux.")
-                  //   .callFunction(() => {
-                  //     console.log("String typed out!");
-                  //   })
-                  //   .pauseFor(1500)
-                  //   .deleteAll()
-                  //   .callFunction(() => {
-                  //     console.log("All strings were deleted");
-                  //   })
                   .typeString(
                     " A passionate Full Stack Developer from Maryland. I have an insatiable desire to learn something new everyday!"
                   )
@@ -48,12 +47,38 @@ export default function MobileMain() {
               }}
             />
           </div>
-          <div style={{ display: "flex" }}>
-            <p>Linked In</p>
-            <p>Github</p>
-            <p>Twitter</p>
+          <div
+            style={{
+              display: "flex",
+              width: "80%",
+              justifyContent: "space-evenly",
+              position: "relative",
+              top: "8%",
+              margin: "0 auto",
+              marginTop: "5%",
+            }}
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
+            <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "2%",
+          left: "2%",
+          width: "50%",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "flex-start",
+          color: "white",
+        }}
+      >
+        <FontAwesomeIcon icon={faFile} />
+        <FontAwesomeIcon icon={faPhone} />
+        <FontAwesomeIcon icon={faDesktop} />
       </div>
     </div>
   );

@@ -12,9 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Route exact path="/">
-          <Home />
-        </Route> */}
         <Route exact path="/" component={Main} />
         <Route exact path="/contact">
           <Header />
