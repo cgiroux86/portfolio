@@ -24,27 +24,25 @@ export default function Main() {
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        height: "100%",
+        width: "100%",
       }}
     >
       <div className="img_wrapper">
         <img className="profile_pic" src={Profile}></img>
         <div className="main_icons_wrapper">
-          <Link to="/contact">
+          <Link style={{ margin: "0" }} to="/contact">
             <FontAwesomeIcon className="icon" icon={faPhone} />
-            <p>Contact</p>
+            <p style={{ margin: "0" }}>Contact</p>
           </Link>
-          <div>
+          <Link>
             <FontAwesomeIcon className="icon" icon={faDesktop} />
-            <p>Projects</p>
-          </div>
-          <div>
+            <p style={{ margin: "0" }}>Projects</p>
+          </Link>
+          <Link>
             <FontAwesomeIcon className="icon" icon={faFile} />
-            <p>Resume</p>
-          </div>
+            <p style={{ margin: "0" }}>Resume</p>
+          </Link>
         </div>
       </div>
       <div className="hello">

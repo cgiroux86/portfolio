@@ -3,7 +3,7 @@ import sleepTracker from "../images/sleepTracker.mov";
 
 export default function SleepTracker() {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <div className="sort_viz">
         <div>
           <h3>Sleep Tracker</h3>
