@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 export default function Main() {
   useEffect(() => {
@@ -47,10 +48,35 @@ export default function Main() {
         </div>
       </div>
       <div className="hello">
-        Hi! I'm Chris Giroux, a Full Stack Developer from Maryland.
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Hi! I'm Chris Giroux.")
+              //   .callFunction(() => {
+              //     console.log("String typed out!");
+              //   })
+              //   .pauseFor(1500)
+              //   .deleteAll()
+              //   .callFunction(() => {
+              //     console.log("All strings were deleted");
+              //   })
+              .typeString(" A passionate Full Stack Developer from Maryland.")
+              .start();
+          }}
+        />
       </div>
-      <div className="typewriter">
-        <h1>I have an insatiable desire to learn something new everyday.</h1>
+      <div className="hello_text">
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(3000)
+              .typeString(
+                "I have an insatiable desire to learn something new everyday!"
+              )
+
+              .start();
+          }}
+        />
       </div>
     </div>
   );
