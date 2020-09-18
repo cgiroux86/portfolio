@@ -9,6 +9,7 @@ import {
   faTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function MobileMain() {
   return (
@@ -67,18 +68,27 @@ export default function MobileMain() {
       <div
         style={{
           position: "absolute",
-          bottom: "2%",
-          left: "2%",
-          width: "50%",
+          top: "2%",
+          left: "15%",
+          width: "70%",
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "flex-start",
           color: "white",
         }}
       >
-        <FontAwesomeIcon icon={faFile} />
-        <FontAwesomeIcon icon={faPhone} />
-        <FontAwesomeIcon icon={faDesktop} />
+        <Link className="mobile_link" to="/resume">
+          <FontAwesomeIcon icon={faFile} />
+          <p className="mobile_type">Resume</p>
+        </Link>
+        <Link className="mobile_link" to="/resume">
+          <FontAwesomeIcon icon={faPhone} />
+          <p className="mobile_type">Contact</p>
+        </Link>
+        <Link className="mobile_link" to="/resume">
+          <FontAwesomeIcon icon={faDesktop} />
+          <p className="mobile_type">Portfolio</p>
+        </Link>
       </div>
     </div>
   );

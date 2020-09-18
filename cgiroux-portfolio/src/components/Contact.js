@@ -53,7 +53,7 @@ export default function Contact() {
               icon={faLinkedinIn}
             />
             <FontAwesomeIcon style={{ fontSize: "1.5rem" }} icon={faGithub} />
-            <FontAwesomeIcon icon={faTwitter} style={{ color: "babyblue" }} />
+            <FontAwesomeIcon icon={faTwitter} style={{ color: "#00acee" }} />
           </div>
         </div>
       </div>

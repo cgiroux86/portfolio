@@ -34,17 +34,13 @@ export default function Projects() {
     <div className="projects_container">
       <div className="projects_card">
         <h2 className="contact_title">Projects</h2>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-evenly",
-            width: "40%",
-            fontSize: "2rem",
-            margin: "2% auto",
-          }}
-        >
+        <div className="directions">
           <FontAwesomeIcon onClick={goBack} icon={faChevronLeft} />
-          <FontAwesomeIcon onClick={goForward} icon={faChevronRight} />
+          <FontAwesomeIcon
+            // className="directions"
+            onClick={goForward}
+            icon={faChevronRight}
+          />
         </div>
         <div className="component">
           {carousel === 0 ? (
