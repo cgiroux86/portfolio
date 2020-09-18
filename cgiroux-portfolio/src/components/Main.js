@@ -1,33 +1,38 @@
 import React, { useEffect } from "react";
-import Profile from "../images/profile.png";
+import Profile from "../images/portfolio.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import MobileMain from "./MobileMain";
 
 export default function Main() {
-  useEffect(() => {
-    gsap.from(".img_wrapper", { opacity: 0, x: -500, duration: 1 });
-  }, []);
+  //   useEffect(() => {
+  //     gsap.from(".img_animation", { opacity: 0, x: 200, duration: 2 });
+  //   }, []);
 
-  useEffect(() => {
-    gsap.from(".hello", { rotation: 360, x: 300, duration: 1, opacity: 0 });
-    gsap.from(".learn", {
-      rotation: 360,
-      x: 300,
-      y: -500,
-      duration: 5,
-      opacity: 0,
-    });
-  }, []);
+  //   useEffect(() => {
+  //     gsap.from(".hello", { rotation: 360, x: 300, duration: 1, opacity: 0 });
+  //     gsap.from(".learn", {
+  //       rotation: 360,
+  //       x: 300,
+  //       y: -500,
+  //       duration: 5,
+  //       opacity: 0,
+  //     });
+  //   }, []);
   return (
     <div
+      className="img_animation"
       style={{
         height: "100%",
         width: "100%",
       }}
     >
+      <div className="mobile">
+        <MobileMain />
+      </div>
       <div className="img_wrapper">
         <img className="profile_pic" src={Profile}></img>
         <div className="main_icons_wrapper">
