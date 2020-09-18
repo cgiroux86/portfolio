@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
-import Profile from "../images/dark_portfolio.png";
+import Profile from "../images/avatar.png";
+import portfolio from "../images/new_portfolio.png";
 
 export default function Header() {
   return (
     <div className="header_wrapper">
       <div className="header_pic">
-        <img src={Profile}></img>
+        <img className="mobile_pic" src={Profile}></img>
+        <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
         <Link style={{ color: "white" }} to="/contact">
