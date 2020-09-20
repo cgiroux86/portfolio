@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Profile from "../images/new_portfolio.png";
+import Profile from "../images/profile_header.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";

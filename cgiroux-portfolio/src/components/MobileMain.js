@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
-import portfolio from "../images/avatar.png";
+import portfolio from "../images/profile_header.png";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
@@ -19,8 +19,8 @@ export default function MobileMain() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "70%",
-            width: "70%",
+            height: "95%",
+            width: "95%",
             margin: "0 auto",
             justifyContent: "space-between",
           }}
@@ -33,23 +33,24 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
+            <h3>Chris Giroux</h3>
             <div
               style={{
                 margin: "0 auto",
                 width: "70%",
                 height: "70%",
-                borderRadius: "10px",
+                borderRadius: "20px",
               }}
             >
-              <img width="100%" height="100%" src={portfolio}></img>
+              <img width="90%" height="90%" src={portfolio}></img>
             </div>
             {/* <Avatar
               src={portfolio}
               style={{ height: "100px", width: "75px" }}
             /> */}
-            <h3>Full Stack Developer</h3>
+            <h5 style={{ margin: "1% auto" }}>Full Stack Developer</h5>
           </div>
-          <div style={{ width: "95%", margin: "0 auto", fontSize: "0.9rem" }}>
+          <div style={{ width: "95%", margin: "0 auto", fontSize: "0.8rem" }}>
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -67,7 +68,7 @@ export default function MobileMain() {
               width: "80%",
               justifyContent: "space-evenly",
               position: "relative",
-              top: "8%",
+              bottom: "2%",
               margin: "0 auto",
             }}
           >
@@ -80,7 +81,7 @@ export default function MobileMain() {
       <div
         style={{
           position: "absolute",
-          top: "3%",
+          top: "5%",
           left: "15%",
           width: "70%",
           display: "flex",

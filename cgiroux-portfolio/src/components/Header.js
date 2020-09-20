@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
-import Profile from "../images/avatar.png";
-import portfolio from "../images/new_portfolio.png";
+import Profile from "../images/profile_header.png";
+import portfolio from "../images/profile_header.png";
 
 export default function Header() {
   return (
