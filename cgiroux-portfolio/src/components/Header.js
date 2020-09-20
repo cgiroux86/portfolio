@@ -29,7 +29,7 @@ export default function Header() {
         <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
-        <Link className="about" to="/resume">
+        <Link className="mobile_link" to="/resume">
           <FontAwesomeIcon icon={faCommentDots} />
           <p className="mobile_type">About</p>
         </Link>

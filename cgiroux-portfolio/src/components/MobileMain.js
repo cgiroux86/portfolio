@@ -24,12 +24,33 @@ export default function MobileMain() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "75%",
-            width: "75%",
+            height: "85%",
+            width: "85%",
             margin: "0 auto",
             justifyContent: "space-between",
           }}
         >
+          <div className="main_icons_container">
+            <Link className="mobile_icon" to="/resume">
+              <FontAwesomeIcon
+                className="new_mobile_icon"
+                icon={faCommentDots}
+              />
+              <p className="mobile_text">About</p>
+            </Link>
+            <Link className="mobile_icon" to="/contact">
+              <FontAwesomeIcon className="new_mobile_icon" icon={faPhone} />
+              <p className="mobile_text">Contact</p>
+            </Link>
+            <Link className="mobile_icon" to="/projects">
+              <FontAwesomeIcon className="new_mobile_icon" icon={faDesktop} />
+              <p className="mobile_text">Portfolio</p>
+            </Link>
+            <Link className="mobile_icon" to="/skills">
+              <FontAwesomeIcon className="new_mobile_icon" icon={faWrench} />
+              <p className="mobile_text">Skills</p>
+            </Link>
+          </div>
           <div
             style={{
               display: "flex",
@@ -38,25 +59,30 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
-            <h2>Chris Giroux</h2>
+            <h2
+              style={{ fontSize: "2rem", position: "relative", bottom: "10%" }}
+            >
+              Chris Giroux
+            </h2>
             <div
               style={{
                 margin: "0 auto",
                 display: "flex",
-                width: "50%",
-                height: "50%",
-                justifyContent: "center",
+                width: "75%",
+                height: "75%",
+                position: "relative",
+                bottom: "10%",
               }}
             >
               <img className="mobile_profile" src={portfolio}></img>
             </div>
-            <h5 style={{ margin: "3% auto" }}>Full Stack Developer</h5>
+            <h4 style={{ margin: "1.5% auto" }}>Full Stack Developer</h4>
           </div>
           <div
             style={{
-              width: "80%",
+              width: "95%",
               margin: "0 auto",
-              fontSize: "0.8rem",
+              fontSize: "1rem",
               textAlign: "center",
             }}
           >
@@ -77,7 +103,7 @@ export default function MobileMain() {
               width: "80%",
               justifyContent: "space-evenly",
               position: "relative",
-              bottom: "-10%",
+              bottom: "-6%",
               margin: "0 auto",
             }}
           >
@@ -87,24 +113,7 @@ export default function MobileMain() {
           </div>
         </div>
       </div>
-      <div className="main_icons_container">
-        <Link className="mobile_link" to="/resume">
-          <FontAwesomeIcon icon={faCommentDots} />
-          <p className="mobile_type">About</p>
-        </Link>
-        <Link className="mobile_link" to="/contact">
-          <FontAwesomeIcon icon={faPhone} />
-          <p className="mobile_type">Contact</p>
-        </Link>
-        <Link className="mobile_link" to="/projects">
-          <FontAwesomeIcon icon={faDesktop} />
-          <p className="mobile_type">Portfolio</p>
-        </Link>
-        <Link className="mobile_link" to="/skills">
-          <FontAwesomeIcon icon={faWrench} />
-          <p className="mobile_type">Skills</p>
-        </Link>
-      </div>
+
       <div className="resume">Download CV</div>
     </div>
   );

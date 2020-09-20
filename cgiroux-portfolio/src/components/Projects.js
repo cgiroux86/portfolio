@@ -27,7 +27,12 @@ export default function Projects() {
 
   useEffect(() => {
     window.screen.availWidth > 600 &&
-      gsap.from(".component", { opacity: 0, y: 200, x: 200, duration: 0.5 });
+      gsap.from(".component", {
+        opacity: 0,
+        rotationY: 180,
+        x: 200,
+        duration: 0.5,
+      });
   }, [carousel]);
 
   return (
