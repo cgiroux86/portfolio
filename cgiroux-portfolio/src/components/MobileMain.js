@@ -37,20 +37,22 @@ export default function MobileMain() {
             <div
               style={{
                 margin: "0 auto",
-                width: "70%",
-                height: "70%",
-                borderRadius: "20px",
+                display: "flex",
+                width: "50%",
+                height: "50%",
+                justifyContent: "center",
               }}
             >
               <img className="mobile_profile" src={portfolio}></img>
             </div>
-            <h5 style={{ margin: "1% auto" }}>Full Stack Developer</h5>
+            <h5 style={{ margin: "3% auto" }}>Full Stack Developer</h5>
           </div>
           <div
             style={{
-              width: "75%",
+              width: "80%",
               margin: "0 auto",
               fontSize: "0.8rem",
+              textAlign: "center",
             }}
           >
             <Typewriter
