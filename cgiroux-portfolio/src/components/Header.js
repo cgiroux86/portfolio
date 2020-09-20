@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
-import Profile from "../images/dark_portfolio.png";
+import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
 
 export default function Header() {
