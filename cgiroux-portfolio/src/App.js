@@ -13,16 +13,17 @@ function App() {
     <Router>
       <div className="App">
         <Route exact path="/" component={Main} />
+        <Route
+          path="/"
+          render={(props) => props.location.pathname !== "/" && <Header />}
+        ></Route>
         <Route exact path="/contact">
-          <Header />
           <Contact />
         </Route>
         <Route exact path="/projects">
-          <Header />
           <Projects />
         </Route>
         <Route exact path="/resume">
-          <Header />
           <Resume />
         </Route>
       </div>

@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Profile from "../images/profile_header.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDesktop,
+  faPhone,
+  faFile,
+  faWrench,
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -9,20 +15,14 @@ import MobileMain from "./MobileMain";
 
 export default function Main() {
   const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   gsap.from(".img_animation", { opacity: 0, x: 200, duration: 2 });
-  // }, []);
+  useEffect(() => {
+    gsap.from(".img_animation", {
+      opacity: 0,
+      rotationY: 180,
+      duration: 1,
+    });
+  }, []);
 
-  //   useEffect(() => {
-  //     gsap.from(".hello", { rotation: 360, x: 300, duration: 1, opacity: 0 });
-  //     gsap.from(".learn", {
-  //       rotation: 360,
-  //       x: 300,
-  //       y: -500,
-  //       duration: 5,
-  //       opacity: 0,
-  //     });
-  //   }, []);
   return (
     <div
       className="img_animation"
@@ -54,8 +54,12 @@ export default function Main() {
               <p style={{ margin: "0", color: "white" }}>Projects</p>
             </Link>
             <Link style={{ color: "white", textDecoration: "none" }}>
-              <FontAwesomeIcon className="icon" icon={faFile} />
-              <p style={{ margin: "0" }}>Resume</p>
+              <FontAwesomeIcon className="icon" icon={faWrench} />
+              <p style={{ margin: "0" }}>Skills</p>
+            </Link>
+            <Link style={{ color: "white", textDecoration: "none" }}>
+              <FontAwesomeIcon className="icon" icon={faCommentDots} />
+              <p style={{ margin: "0" }}>About</p>
             </Link>
           </div>
         </div>
@@ -81,7 +85,7 @@ export default function Main() {
           />
         </div>
       </div>
-      {/* )} */}
+      <div className="resume_main">Download CV</div>
     </div>
   );
 }

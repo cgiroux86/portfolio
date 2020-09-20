@@ -3,7 +3,12 @@ import { Avatar } from "@material-ui/core";
 import portfolio from "../images/profile_header.png";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDesktop,
+  faPhone,
+  faWrench,
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faTwitter,
@@ -82,31 +87,25 @@ export default function MobileMain() {
           </div>
         </div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "3%",
-          left: "15%",
-          width: "70%",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "flex-start",
-          color: "white",
-        }}
-      >
+      <div className="main_icons_container">
         <Link className="mobile_link" to="/resume">
-          <FontAwesomeIcon icon={faFile} />
-          <p className="mobile_type">Resume</p>
+          <FontAwesomeIcon icon={faCommentDots} />
+          <p className="mobile_type">About</p>
         </Link>
-        <Link className="mobile_link" to="/resume">
+        <Link className="mobile_link" to="/contact">
           <FontAwesomeIcon icon={faPhone} />
           <p className="mobile_type">Contact</p>
         </Link>
-        <Link className="mobile_link" to="/resume">
+        <Link className="mobile_link" to="/projects">
           <FontAwesomeIcon icon={faDesktop} />
           <p className="mobile_type">Portfolio</p>
         </Link>
+        <Link className="mobile_link" to="/skills">
+          <FontAwesomeIcon icon={faWrench} />
+          <p className="mobile_type">Skills</p>
+        </Link>
       </div>
+      <div className="resume">Download CV</div>
     </div>
   );
 }
