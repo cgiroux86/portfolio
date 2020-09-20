@@ -338,7 +338,7 @@ body,
     width: 75%;
     font-size: 0.5rem;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 0.5%;
     color: rgb(101, 101, 101);
     font-weight: bold;
@@ -395,12 +395,12 @@ body,
   }
 
   .header_pic {
-    width: 100vw;
+    width: 100%;
     height: 100%;
   }
   .contact_wrapper {
     width: 100%;
-    margin: 7% 0;
+    margin: 12% 0;
   }
   .contact_card {
     width: 100%;
@@ -423,9 +423,9 @@ body,
     /* margin: 5%; */
   }
   .header_wrapper {
-    height: 30%;
+    height: 45%;
     width: 100%;
-    margin: -7% auto;
+    margin: -12% auto;
   }
   .hello {
     font-size: 1.8rem;
@@ -443,7 +443,7 @@ body,
   }
   .projects_container {
     width: 100%;
-    margin: 7% 0;
+    margin: 12% 0;
   }
   .projects_card {
     width: 100vw;
@@ -522,12 +522,12 @@ body,
   .mobile_type {
     margin: 0;
     font-size: 1rem;
-    color: rgb(0, 119, 255);
+    color: white;
     font-weight: bold;
     text-decoration: none;
   }
   .mobile_link {
-    color: rgb(0, 119, 255);
+    color: white;
     text-decoration: none;
     font-size: 1.7rem;
     display: flex;
