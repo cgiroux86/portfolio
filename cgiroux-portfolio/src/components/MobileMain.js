@@ -19,8 +19,8 @@ export default function MobileMain() {
           style={{
             display: "flex",
             flexDirection: "column",
-            height: "95%",
-            width: "95%",
+            height: "75%",
+            width: "75%",
             margin: "0 auto",
             justifyContent: "space-between",
           }}
@@ -33,7 +33,7 @@ export default function MobileMain() {
               alignItems: "center",
             }}
           >
-            <h3>Chris Giroux</h3>
+            <h2>Chris Giroux</h2>
             <div
               style={{
                 margin: "0 auto",
@@ -42,15 +42,17 @@ export default function MobileMain() {
                 borderRadius: "20px",
               }}
             >
-              <img width="90%" height="90%" src={portfolio}></img>
+              <img className="mobile_profile" src={portfolio}></img>
             </div>
-            {/* <Avatar
-              src={portfolio}
-              style={{ height: "100px", width: "75px" }}
-            /> */}
             <h5 style={{ margin: "1% auto" }}>Full Stack Developer</h5>
           </div>
-          <div style={{ width: "95%", margin: "0 auto", fontSize: "0.8rem" }}>
+          <div
+            style={{
+              width: "75%",
+              margin: "0 auto",
+              fontSize: "0.8rem",
+            }}
+          >
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -68,7 +70,7 @@ export default function MobileMain() {
               width: "80%",
               justifyContent: "space-evenly",
               position: "relative",
-              bottom: "2%",
+              bottom: "-10%",
               margin: "0 auto",
             }}
           >
@@ -81,7 +83,7 @@ export default function MobileMain() {
       <div
         style={{
           position: "absolute",
-          top: "5%",
+          top: "3%",
           left: "15%",
           width: "70%",
           display: "flex",

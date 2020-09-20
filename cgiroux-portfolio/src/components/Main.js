@@ -6,17 +6,12 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import MobileMain from "./MobileMain";
-import { colors } from "@material-ui/core";
 
 export default function Main() {
   const [loading, setLoading] = useState(true);
   // useEffect(() => {
   //   gsap.from(".img_animation", { opacity: 0, x: 200, duration: 2 });
   // }, []);
-
-  useEffect(() => {
-    console.log("component loaded");
-  }, [loading]);
 
   //   useEffect(() => {
   //     gsap.from(".hello", { rotation: 360, x: 300, duration: 1, opacity: 0 });
@@ -36,8 +31,8 @@ export default function Main() {
         width: "100%",
       }}
     >
-      <div>
-        <div className="mobile">
+      <div style={{ width: "100%", height: "100%" }}>
+        <div className="mobile" style={{ width: "100%", height: "100%" }}>
           <MobileMain />
         </div>
         <div className={loading ? "loading" : "img_wrapper"}>
