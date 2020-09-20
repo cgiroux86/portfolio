@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
-import Profile from "../images/profile_header.png";
+import Profile from "../images/dark_portfolio.png";
 import portfolio from "../images/profile_header.png";
 
 export default function Header() {
@@ -13,16 +13,16 @@ export default function Header() {
         <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
-        <Link style={{ color: "white" }} to="/contact">
+        <Link className="links_container" to="/contact">
           <FontAwesomeIcon className="icon" icon={faPhone} />
           <p>Contact</p>
         </Link>
-        <Link style={{ color: "white" }} to="/projects">
+        <Link className="links_container" to="/projects">
           <FontAwesomeIcon className="icon" icon={faDesktop} />
           <p>Projects</p>
         </Link>
         <div>
-          <Link style={{ color: "white" }} to="/resume">
+          <Link className="links_container" to="/resume">
             <FontAwesomeIcon className="icon" icon={faFile} />
             <p>Resume</p>
           </Link>

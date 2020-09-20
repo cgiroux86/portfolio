@@ -358,7 +358,7 @@ body,
     margin: 5%;
   }
   .header_wrapper {
-    height: 30vh;
+    height: 40%;
     width: 100%;
   }
   .hello {
@@ -435,6 +435,12 @@ body,
     width: 100%;
     margin: 0 auto;
     border-radius: 5px;
+  }
+  .links_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .mobile_type {
