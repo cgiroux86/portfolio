@@ -270,7 +270,7 @@ body,
   text-decoration: none;
 }
 .mobile_link {
-  color: blue;
+  color: white;
   text-decoration: none;
   font-size: 1.7rem;
   display: flex;
@@ -319,7 +319,7 @@ body,
 
 @media screen and (max-width: 500px) {
   .mobile_pic {
-    display: block;
+    display: flex;
   }
   .main_pic {
     display: none;
@@ -363,7 +363,7 @@ body,
     border: 1px solid black;
     box-shadow: 0 3px 3px 0px grey;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
   }
   .home_img {
@@ -400,17 +400,17 @@ body,
   }
   .contact_wrapper {
     width: 100%;
-    height: 100%;
+    margin: 7% 0;
   }
   .contact_card {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     justify-content: space-evenly;
     text-align: center;
   }
   .contact_type {
     height: 100%;
-    width: 90vw;
+    width: 90%;
     margin: 1% auto;
     justify-content: space-evenly;
   }
@@ -420,7 +420,7 @@ body,
     height: 100%;
   }
   .contact_title {
-    margin: 5%;
+    /* margin: 5%; */
   }
   .header_wrapper {
     height: 30%;
@@ -443,6 +443,7 @@ body,
   }
   .projects_container {
     width: 100%;
+    margin: 7% 0;
   }
   .projects_card {
     width: 100vw;
@@ -510,23 +511,23 @@ body,
   }
   .cv {
     position: absolute;
-    top: 17%;
-    right: 1%;
-    font-size: 0.7rem;
+    top: 23%;
+    right: 2%;
+    font-size: 1rem;
     font-weight: bold;
     background: blue;
-    padding: 0.5%;
+    padding: 1%;
     color: white;
   }
   .mobile_type {
     margin: 0;
     font-size: 1rem;
-    color: white;
+    color: rgb(0, 119, 255);
     font-weight: bold;
     text-decoration: none;
   }
   .mobile_link {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 119, 255);
     text-decoration: none;
     font-size: 1.7rem;
     display: flex;
