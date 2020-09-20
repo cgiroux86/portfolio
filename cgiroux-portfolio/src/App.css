@@ -43,9 +43,19 @@ body,
   font-size: 1rem;
   position: absolute;
   left: 20%;
-  top: 12%;
+  top: 5%;
   font-weight: bold;
   /* margin: -5.2% auto; */
+}
+
+.main_link {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .icon {
@@ -208,7 +218,7 @@ body,
   font-weight: bold;
   color: whitesmoke;
   left: 60%;
-  top: 30%;
+  top: 20%;
 }
 
 .learn {
@@ -277,16 +287,7 @@ body,
   align-items: center;
   flex-direction: column;
 }
-/* .about {
-  color: white;
-  text-decoration: none;
-  font-size: 1.7rem;
-  display: flex;
-  margin: 0.4% 0;
-  top: 10%;
-  align-items: center;
-  flex-direction: column;
-} */
+
 .resume {
   display: flex;
   flex-direction: column;
@@ -306,15 +307,20 @@ body,
   display: flex;
   flex-direction: column;
   background: blue;
-  padding: 0.7%;
+  padding: 0.5%;
+  border-radius: 5px;
   position: absolute;
-  top: 12%;
+  top: 5%;
   right: 21%;
   color: white;
   text-decoration: none;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-weight: bold;
   width: "40%";
+}
+.img_animation {
+  height: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
@@ -568,5 +574,9 @@ body,
   }
   .new_mobile_icon {
     font-size: 1.5rem;
+  }
+  .img_animation {
+    height: 100%;
+    width: 100%;
   }
 }

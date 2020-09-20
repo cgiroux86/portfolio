@@ -24,13 +24,7 @@ export default function Main() {
   }, []);
 
   return (
-    <div
-      className="img_animation"
-      style={{
-        height: "100%",
-        width: "100%",
-      }}
-    >
+    <div className="img_animation">
       <div style={{ width: "100%", height: "100%" }}>
         <div className="mobile" style={{ width: "100%", height: "100%" }}>
           <MobileMain />
@@ -42,22 +36,19 @@ export default function Main() {
             src={Profile}
           ></img>
           <div className="main_icons_wrapper">
-            <Link
-              style={{ margin: "0", color: "white", textDecoration: "none" }}
-              to="/contact"
-            >
+            <Link className="main_link" to="/contact">
               <FontAwesomeIcon className="icon" icon={faPhone} />
               <p style={{ margin: "1%", textDecoration: "none" }}>Contact</p>
             </Link>
-            <Link>
+            <Link className="main_link">
               <FontAwesomeIcon className="icon" icon={faDesktop} />
               <p style={{ margin: "0", color: "white" }}>Projects</p>
             </Link>
-            <Link style={{ color: "white", textDecoration: "none" }}>
+            <Link className="main_link">
               <FontAwesomeIcon className="icon" icon={faWrench} />
               <p style={{ margin: "0" }}>Skills</p>
             </Link>
-            <Link style={{ color: "white", textDecoration: "none" }}>
+            <Link className="main_link">
               <FontAwesomeIcon className="icon" icon={faCommentDots} />
               <p style={{ margin: "0" }}>About</p>
             </Link>
