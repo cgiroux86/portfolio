@@ -24,11 +24,12 @@ body,
 .icons_wrapper {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 50%;
   color: white;
   font-size: 1rem;
   position: absolute;
   top: 18%;
+  left: -1%;
   /* left: %; */
 
   font-weight: bold;
@@ -175,7 +176,6 @@ body,
 }
 
 .header_wrapper {
-  /* margin-top: 10%; */
   height: 55%;
   width: 45%;
   margin: -4.3% auto 0;
@@ -207,7 +207,6 @@ body,
   font-size: 2.5rem;
   font-weight: bold;
   color: whitesmoke;
-  /* bottom: 300%; */
   left: 60%;
   top: 30%;
 }
@@ -251,8 +250,9 @@ body,
   font-size: 1rem;
   position: absolute;
   top: 19%;
-  padding: 0.6%;
+  padding: 0.7%;
   right: 2.5%;
+  text-decoration: none;
 }
 .main_icons_container {
   position: absolute;
@@ -265,7 +265,7 @@ body,
   color: white;
 }
 .mobile_type {
-  margin: 0;
+  margin: 3% auto;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -273,8 +273,18 @@ body,
 .mobile_link {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: flex;
+  margin: 0.4% 0;
+  top: 10%;
   align-items: center;
   flex-direction: column;
 }
@@ -317,27 +327,20 @@ body,
   }
   .img_wrapper {
     display: none;
-    /* height: 100vh;
-    width: 100vw;
-    display: block;
-    margin: 0 auto; */
   }
   .hello_text {
     display: none;
     margin: 0 auto;
-    /* width: 100%;
-    position: absolute;
-    font-size: 1.5rem;
-    top: 2%; */
   }
   .icons_wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    width: 45%;
+    width: 75%;
     font-size: 0.5rem;
     position: absolute;
-    top: 17%;
-    left: 1%;
+    top: 75%;
+    left: 0.5%;
     color: rgb(101, 101, 101);
     font-weight: bold;
     margin: 0 auto;
@@ -518,14 +521,15 @@ body,
   }
   .mobile_type {
     margin: 0;
-    font-size: 0.5rem;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
   }
   .mobile_link {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.7rem;
     display: flex;
     align-items: center;
     flex-direction: column;

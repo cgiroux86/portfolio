@@ -11,6 +11,7 @@ import {
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
 import { gsap } from "gsap";
+import resume from "../images/Resume.pdf";
 
 export default function Header() {
   useEffect(() => {
@@ -28,24 +29,26 @@ export default function Header() {
         <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
-        <Link className="mobile_link" to="/resume">
+        <Link className="about" to="/resume">
           <FontAwesomeIcon icon={faCommentDots} />
           <p className="mobile_type">About</p>
+        </Link>
+        <Link className="mobile_link" to="/projects">
+          <FontAwesomeIcon icon={faFile} />
+          <p className="mobile_type">Projects</p>
         </Link>
         <Link className="mobile_link" to="/contact">
           <FontAwesomeIcon icon={faPhone} />
           <p className="mobile_type">Contact</p>
-        </Link>
-        <Link className="mobile_link" to="/projects">
-          <FontAwesomeIcon icon={faDesktop} />
-          <p className="mobile_type">Projects</p>
         </Link>
         <Link className="mobile_link" to="/skills">
           <FontAwesomeIcon icon={faWrench} />
           <p className="mobile_type">Skills</p>
         </Link>
       </div>
-      <div className="cv">Download CV</div>
+      <a className="cv" href={resume} download="resume">
+        Download CV
+      </a>
     </div>
     // </div>
   );

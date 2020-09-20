@@ -36,11 +36,7 @@ export default function Projects() {
         <h2 className="contact_title">Projects</h2>
         <div className="directions">
           <FontAwesomeIcon onClick={goBack} icon={faChevronLeft} />
-          <FontAwesomeIcon
-            // className="directions"
-            onClick={goForward}
-            icon={faChevronRight}
-          />
+          <FontAwesomeIcon onClick={goForward} icon={faChevronRight} />
         </div>
         <div className="component">
           {carousel === 0 ? (
