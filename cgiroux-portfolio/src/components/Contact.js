@@ -7,9 +7,10 @@ import {
   faLinkedinIn,
   faGithub,
   faTwitter,
+  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
-import Profile from "../images/profile.jpg";
 import { gsap } from "gsap";
+import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
 export default function Contact() {
   useEffect(() => {
@@ -38,26 +39,50 @@ export default function Contact() {
             bootstrapURLKeys={{
               key: "AIzaSyBmsu_PRrjasc_CbMmy4Q_1JOLt-O2paE0",
             }}
-            defaultCenter={{
-              lat: 39.138997,
-              lng: -76.870529,
+            center={{
+              lat: 39.1427,
+              lng: -76.8606,
             }}
-            defaultZoom={10}
+            zoom={11}
+            onGoogleApiLoaded={({ map, maps }) => {
+              new maps.Marker({
+                icon: {
+                  strokeColor: "#FFFFFF",
+                  strokeOpacity: 0.7,
+                  strokeWeight: 2,
+                  fillColor: "#4285F4",
+                  fillOpacity: 1,
+                  scale: 8,
+                  anchor: new maps.Point(0, 0),
+                },
+                map,
+                position: {
+                  lat: 39.1427,
+                  lng: -76.8606,
+                },
+                zIndex: -1,
+              });
+              new maps.Marker({
+                icon: {
+                  strokeColor: "transparent",
+                  strokeOpacity: 0.7,
+                  strokeWeight: 0,
+                  fillColor: "#4285F4",
+                  fillOpacity: 0.2,
+                  path: maps.SymbolPath.CIRCLE,
+                  scale: 20,
+                  anchor: new maps.Point(0, 0),
+                },
+                map,
+                position: {
+                  lat: 39.1427,
+                  lng: -76.8606,
+                },
+                zIndex: -1,
+              });
+            }}
           >
-            <div lat={39.138997} lng={-76.870529}>
-              <div
-                style={{
-                  backgroundColor: "blue",
-                  height: "100px",
-                  width: "100x",
-                  fontSize: "5rem",
-                  color: "blue",
-                  zIndex: 1,
-                }}
-              >
-                .
-              </div>
-            </div>
+            <Marker lat={39.138997} lng={-76.870529} />
           </GoogleMapReact>
         </div>
         <div className="connect_container">
@@ -69,6 +94,7 @@ export default function Contact() {
             />
             <FontAwesomeIcon style={{ fontSize: "1.5rem" }} icon={faGithub} />
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#00acee" }} />
+            <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
           </div>
         </div>
       </div>

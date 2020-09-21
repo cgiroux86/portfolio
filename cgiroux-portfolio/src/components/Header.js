@@ -12,6 +12,7 @@ import {
   faGithub,
   faTwitter,
   faLinkedinIn,
+  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
@@ -58,6 +59,7 @@ export default function Header() {
         <FontAwesomeIcon icon={faGithub} />
         <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
         <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
+        <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
       </div>
     </div>
     // </div>

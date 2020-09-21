@@ -12,6 +12,7 @@ import {
   faGithub,
   faTwitter,
   faLinkedinIn,
+  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
@@ -86,6 +87,7 @@ export default function Main() {
         <FontAwesomeIcon icon={faGithub} />
         <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
         <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
+        <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
       </div>
     </div>
   );
