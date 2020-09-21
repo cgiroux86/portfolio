@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDesktop,
   faPhone,
-  faWrench,
+  faHome,
   faFile,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
@@ -29,7 +29,7 @@ export default function Header() {
         <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
-        <Link className="mobile_link" to="/resume">
+        <Link className="mobile_link" to="/skills">
           <FontAwesomeIcon icon={faCommentDots} />
           <p className="mobile_type">About</p>
         </Link>
@@ -41,9 +41,9 @@ export default function Header() {
           <FontAwesomeIcon icon={faPhone} />
           <p className="mobile_type">Contact</p>
         </Link>
-        <Link className="mobile_link" to="/skills">
-          <FontAwesomeIcon icon={faWrench} />
-          <p className="mobile_type">Skills</p>
+        <Link className="mobile_link" to="/">
+          <FontAwesomeIcon icon={faHome} />
+          <p className="mobile_type">Home</p>
         </Link>
       </div>
       <a className="cv" href={resume} download="resume">

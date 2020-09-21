@@ -5,9 +5,14 @@ import {
   faDesktop,
   faPhone,
   faFile,
-  faWrench,
+  faHome,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -45,8 +50,8 @@ export default function Main() {
               <p style={{ margin: "0", color: "white" }}>Projects</p>
             </Link>
             <Link className="main_link">
-              <FontAwesomeIcon className="icon" icon={faWrench} />
-              <p style={{ margin: "0" }}>Skills</p>
+              <FontAwesomeIcon className="icon" icon={faHome} />
+              <p style={{ margin: "0" }}>Home</p>
             </Link>
             <Link className="main_link">
               <FontAwesomeIcon className="icon" icon={faCommentDots} />
@@ -77,6 +82,11 @@ export default function Main() {
         </div>
       </div>
       <div className="resume_main">Download CV</div>
+      <div className="main_connect">
+        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
+        <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
+      </div>
     </div>
   );
 }
