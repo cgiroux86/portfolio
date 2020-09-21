@@ -46,17 +46,17 @@ export default function Main() {
               <FontAwesomeIcon className="icon" icon={faPhone} />
               <p style={{ margin: "1%", textDecoration: "none" }}>Contact</p>
             </Link>
-            <Link className="main_link">
+            <Link className="main_link" to="/projects">
               <FontAwesomeIcon className="icon" icon={faDesktop} />
               <p style={{ margin: "0", color: "white" }}>Projects</p>
             </Link>
-            <Link className="main_link">
-              <FontAwesomeIcon className="icon" icon={faHome} />
-              <p style={{ margin: "0" }}>Home</p>
-            </Link>
-            <Link className="main_link">
+            <Link className="main_link" to="/skills">
               <FontAwesomeIcon className="icon" icon={faCommentDots} />
               <p style={{ margin: "0" }}>About</p>
+            </Link>
+            <Link className="main_link" to="/">
+              <FontAwesomeIcon className="icon" icon={faHome} />
+              <p style={{ margin: "0" }}>Home</p>
             </Link>
           </div>
         </div>
