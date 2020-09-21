@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDesktop,
   faPhone,
-  faWrench,
+  faHome,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -31,7 +31,7 @@ export default function MobileMain() {
           }}
         >
           <div className="main_icons_container">
-            <Link className="mobile_icon" to="/resume">
+            <Link className="mobile_icon" to="/skills">
               <FontAwesomeIcon
                 className="new_mobile_icon"
                 icon={faCommentDots}
@@ -46,9 +46,9 @@ export default function MobileMain() {
               <FontAwesomeIcon className="new_mobile_icon" icon={faDesktop} />
               <p className="mobile_text">Portfolio</p>
             </Link>
-            <Link className="mobile_icon" to="/skills">
-              <FontAwesomeIcon className="new_mobile_icon" icon={faWrench} />
-              <p className="mobile_text">Skills</p>
+            <Link className="mobile_icon" to="/">
+              <FontAwesomeIcon className="new_mobile_icon" icon={faHome} />
+              <p className="mobile_text">Home</p>
             </Link>
           </div>
           <div

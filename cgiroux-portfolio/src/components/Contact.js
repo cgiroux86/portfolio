@@ -43,7 +43,22 @@ export default function Contact() {
               lng: -76.870529,
             }}
             defaultZoom={10}
-          ></GoogleMapReact>
+          >
+            <div lat={39.138997} lng={-76.870529}>
+              <div
+                style={{
+                  backgroundColor: "blue",
+                  height: "100px",
+                  width: "100x",
+                  fontSize: "5rem",
+                  color: "blue",
+                  zIndex: 1,
+                }}
+              >
+                .
+              </div>
+            </div>
+          </GoogleMapReact>
         </div>
         <div className="connect_container">
           <h2 className="connect_title">Connect</h2>

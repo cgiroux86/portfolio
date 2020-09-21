@@ -8,6 +8,11 @@ import {
   faFile,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
 import { gsap } from "gsap";
@@ -49,6 +54,11 @@ export default function Header() {
       <a className="cv" href={resume} download="resume">
         Download CV
       </a>
+      <div className="header_connect">
+        <FontAwesomeIcon icon={faGithub} />
+        <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
+        <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
+      </div>
     </div>
     // </div>
   );
