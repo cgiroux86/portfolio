@@ -17,7 +17,7 @@ import {
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
 import { gsap } from "gsap";
-import resume from "../images/Resume.pdf";
+import resume from "../images/new_resume.pdf";
 import { useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -65,7 +65,7 @@ export default function Header() {
           <p className="mobile_type">Home</p>
         </Link>
       </div>
-      <a className="cv" href={resume} download="resume">
+      <a className="cv" href={resume} download="cgiroux_cv">
         Download CV
       </a>
       <div className="header_connect">

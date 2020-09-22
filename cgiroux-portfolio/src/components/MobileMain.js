@@ -15,6 +15,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import resume from "../images/new_resume.pdf";
 
 export default function MobileMain() {
   return (
@@ -114,7 +115,9 @@ export default function MobileMain() {
         </div>
       </div>
 
-      <div className="resume">Download CV</div>
+      <a className="cv" href={resume} download="cgiroux_cv">
+        Download CV
+      </a>
     </div>
   );
 }

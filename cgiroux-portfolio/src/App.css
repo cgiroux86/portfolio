@@ -797,6 +797,16 @@ li {
   .active_style {
     color: rgb(0, 128, 255);
   }
+  .cv {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1rem;
+    font-weight: bold;
+    background: blue;
+    padding: 0.5%;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -989,12 +999,12 @@ li {
   }
   .cv {
     position: absolute;
-    top: 23%;
-    right: 2%;
+    top: 6%;
+    right: 5%;
     font-size: 1rem;
     font-weight: bold;
     background: blue;
-    padding: 1%;
+    padding: 0.5%;
     color: white;
   }
   .mobile_type {
@@ -1127,5 +1137,15 @@ li {
   }
   .active_style {
     color: rgb(0, 128, 255);
+  }
+  .resume_main {
+    position: absolute;
+    top: 23%;
+    right: 2%;
+    font-size: 1rem;
+    font-weight: bold;
+    background: blue;
+    padding: 1%;
+    color: white;
   }
 }
