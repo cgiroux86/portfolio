@@ -42,13 +42,10 @@ export default function SleepTracker() {
           </div>
           <div style={{ width: "90%", margin: "2% auto", fontSize: "1rem" }}>
             <p>
-              Algorithms are fun! Ever since studying CS, I have fallen in love
-              with studying and implementing algorithms to solve real life
-              problems. Classic sorting algorithms are nothing new, neither are
-              visualizations. However, you don't see many applications with the
-              ability to compare these algorithms side by side. It was an
-              excellent way to demonstrate real life problem solving using React
-              and further my understanding of classic sorting algorithms.
+              Conway's Game of Life is frequently implemented when studying
+              algorithms. I wanted to put a unique twist on this interesting
+              problem, by building it in React. It was my first introduction to
+              cellular automation and was a blast to build.
             </p>
           </div>
         </div>

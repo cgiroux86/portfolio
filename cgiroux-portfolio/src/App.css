@@ -151,6 +151,7 @@ body,
   font-size: 1.2rem;
   color: rgb(101, 101, 101);
   text-align: center;
+  padding: 1%;
 }
 
 .connect_container {
@@ -344,6 +345,7 @@ body,
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 3%;
   border: 1px solid black;
   flex-direction: column;
 }
@@ -462,6 +464,13 @@ li {
 }
 .mobile_type {
   color: white;
+}
+.projects_container {
+  margin-bottom: 3%;
+}
+.about_text {
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {

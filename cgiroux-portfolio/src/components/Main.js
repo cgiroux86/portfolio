@@ -88,10 +88,18 @@ export default function Main({ resume }) {
         Download CV
       </a>
       <div className="main_connect">
-        <FontAwesomeIcon icon={faGithub} />
-        <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
-        <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
-        <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
+        <a href="https://www.github.com/cgiroux86">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a href="https://www.linkedin.com/in/cgiroux1017">
+          <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
+        </a>
+        <a href="https://wwww.twitter.com/cgiroux1017">
+          <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
+        </a>
+        {/* <a>
+          <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
+        </a> */}
       </div>
     </div>
   );
