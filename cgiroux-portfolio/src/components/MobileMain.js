@@ -1,5 +1,4 @@
 import React from "react";
-import { Avatar } from "@material-ui/core";
 import portfolio from "../images/profile_header.png";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

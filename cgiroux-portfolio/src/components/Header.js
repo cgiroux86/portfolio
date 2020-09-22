@@ -76,9 +76,7 @@ export default function Header() {
         <a href="https://www.twitter.com/cgiroux1017">
           <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
         </a>
-        {/* <FontAwesomeIcon style={{ color: "'red'" }} icon={faGooglePlus} /> */}
       </div>
     </div>
-    // </div>
   );
 }
