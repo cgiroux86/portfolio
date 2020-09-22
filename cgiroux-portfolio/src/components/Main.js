@@ -64,8 +64,9 @@ export default function Main() {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString("Hi! I'm Chris Giroux.")
-                .typeString(" A passionate Full Stack Developer from Maryland.")
+                .typeString(
+                  "Hi! I'm Chris Giroux, a passionate Full Stack Developer from Maryland."
+                )
                 .start();
             }}
           />

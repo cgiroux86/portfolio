@@ -18,8 +18,12 @@ import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
 import { gsap } from "gsap";
 import resume from "../images/Resume.pdf";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
+  const { pathname } = useLocation();
+  console.log("location", pathname);
+
   useEffect(() => {
     gsap.from(".header_wrapper", {
       opacity: 0,
@@ -35,15 +39,24 @@ export default function Header() {
         <img className="main_pic" src={portfolio}></img>
       </div>
       <div className="icons_wrapper">
-        <Link className="mobile_link" to="/skills">
+        <Link
+          className={pathname === "/skills" ? "active_style" : "mobile_link"}
+          to="/skills"
+        >
           <FontAwesomeIcon icon={faCommentDots} />
           <p className="mobile_type">About</p>
         </Link>
-        <Link className="mobile_link" to="/projects">
+        <Link
+          className={pathname === "/projects" ? "active_style" : "mobile_link"}
+          to="/projects"
+        >
           <FontAwesomeIcon icon={faFile} />
           <p className="mobile_type">Projects</p>
         </Link>
-        <Link className="mobile_link" to="/contact">
+        <Link
+          className={pathname === "/contact" ? "active_style" : "mobile_link"}
+          to="/contact"
+        >
           <FontAwesomeIcon icon={faPhone} />
           <p className="mobile_type">Contact</p>
         </Link>
@@ -59,7 +72,7 @@ export default function Header() {
         <FontAwesomeIcon icon={faGithub} />
         <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
         <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
-        <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
+        <FontAwesomeIcon style={{ color: "'red'" }} icon={faGooglePlus} />
       </div>
     </div>
     // </div>

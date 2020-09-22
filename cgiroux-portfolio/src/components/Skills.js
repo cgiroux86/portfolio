@@ -28,6 +28,7 @@ export default function Skills() {
               <li>Redux</li>
               <li>Jest</li>
               <li>React Testing Library</li>
+              <li>JWT</li>
             </ul>
           </div>
           <div className="lists">
@@ -42,7 +43,6 @@ export default function Skills() {
             <ul>
               <li>PostgreSQL</li>
               <li>Ouath</li>
-              <li>JWT</li>
               <li>Flask</li>
               <li>Docker</li>
             </ul>
