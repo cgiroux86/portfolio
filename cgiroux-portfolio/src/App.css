@@ -463,6 +463,9 @@ li {
 .mobile_type {
   color: white;
 }
+.projects_container {
+  margin-bottom: 3%;
+}
 
 @media screen and (max-width: 768px) {
   .mobile_pic {

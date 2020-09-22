@@ -44,13 +44,10 @@ export default function SleepTracker() {
           </div>
           <div style={{ width: "90%", margin: "2% auto", fontSize: "1rem" }}>
             <p>
-              Algorithms are fun! Ever since studying CS, I have fallen in love
-              with studying and implementing algorithms to solve real life
-              problems. Classic sorting algorithms are nothing new, neither are
-              visualizations. However, you don't see many applications with the
-              ability to compare these algorithms side by side. It was an
-              excellent way to demonstrate real life problem solving using React
-              and further my understanding of classic sorting algorithms.
+              Designed to give users ability to easily input information about
+              their sleeping patterns. Through data visualizations and a simple
+              algorithm, users are able view their sleeping patterns and receive
+              feedback on optimal sleeping time.
             </p>
           </div>
         </div>
