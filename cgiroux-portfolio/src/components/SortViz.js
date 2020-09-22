@@ -1,5 +1,5 @@
 import React from "react";
-import sortViz1 from "../images/sortviz1.mov";
+import sortViz1 from "../images/SortViz.mp4";
 
 export default function SortViz() {
   return (

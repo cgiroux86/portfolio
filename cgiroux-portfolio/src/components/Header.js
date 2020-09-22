@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDesktop,
   faPhone,
   faHome,
   faFile,
@@ -12,7 +11,6 @@ import {
   faGithub,
   faTwitter,
   faLinkedinIn,
-  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
