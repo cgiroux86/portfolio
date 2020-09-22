@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDesktop,
   faPhone,
-  faFile,
   faHome,
   faCommentDots,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +11,6 @@ import {
   faGithub,
   faTwitter,
   faLinkedinIn,
-  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
@@ -97,9 +95,6 @@ export default function Main({ resume }) {
         <a href="https://wwww.twitter.com/cgiroux1017">
           <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
         </a>
-        {/* <a>
-          <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
-        </a> */}
       </div>
     </div>
   );

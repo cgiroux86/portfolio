@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
 import GoogleMapReact from "google-map-react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDesktop, faPhone, faFile } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedinIn,
   faGithub,
   faTwitter,
-  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
-import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
 export default function Contact() {
   useEffect(() => {
@@ -81,9 +77,7 @@ export default function Contact() {
                 zIndex: -1,
               });
             }}
-          >
-            <Marker lat={39.138997} lng={-76.870529} />
-          </GoogleMapReact>
+          ></GoogleMapReact>
         </div>
         <div className="connect_container">
           <h2 className="connect_title">Connect</h2>

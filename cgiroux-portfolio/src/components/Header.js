@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDesktop,
   faPhone,
   faHome,
   faFile,
@@ -12,7 +11,6 @@ import {
   faGithub,
   faTwitter,
   faLinkedinIn,
-  faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
 import Profile from "../images/profile_blur.jpg";
 import portfolio from "../images/profile_header.png";
@@ -78,9 +76,7 @@ export default function Header() {
         <a href="https://www.twitter.com/cgiroux1017">
           <FontAwesomeIcon style={{ color: "#00acee" }} icon={faTwitter} />
         </a>
-        {/* <FontAwesomeIcon style={{ color: "'red'" }} icon={faGooglePlus} /> */}
       </div>
     </div>
-    // </div>
   );
 }
