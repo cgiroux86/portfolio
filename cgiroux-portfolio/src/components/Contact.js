@@ -94,7 +94,6 @@ export default function Contact() {
             />
             <FontAwesomeIcon style={{ fontSize: "1.5rem" }} icon={faGithub} />
             <FontAwesomeIcon icon={faTwitter} style={{ color: "#00acee" }} />
-            <FontAwesomeIcon style={{ color: "red" }} icon={faGooglePlus} />
           </div>
         </div>
       </div>
