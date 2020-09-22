@@ -5,9 +5,25 @@ export default function SleepTracker() {
   return (
     <div style={{ width: "100%" }}>
       <div className="sort_viz">
-        <div>
-          <h3>Sleep Tracker</h3>
+        <div className="tech_container">
+          <h3 style={{ textAlign: "center", padding: "0" }}>Sleep Tracker</h3>
+          <div className="stack_header">
+            <div className="stack_wrapper">
+              <h5 className="title_text">Tech Stack: </h5>
+              <span className="skills_list">
+                Javascript | React | Redux | Node.js | Express | PostgreSQL |
+                Knex | Material-UI | Recharts | Heroku
+              </span>
+            </div>
+            <div className="stack_wrapper">
+              <h5 className="title_text">Links: </h5>
+              <span className="skills_list">
+                Github Repo | Deployed Version
+              </span>
+            </div>
+          </div>
         </div>
+
         <div
           style={{
             display: "flex",

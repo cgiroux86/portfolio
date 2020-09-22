@@ -3,22 +3,25 @@ import { gsap } from "gsap";
 import SortViz from "./SortViz";
 import TeamReel from "./TeamReel";
 import SleepTracker from "./SleepTracker";
+import Flatten from "./Flatten";
+import Gol from "./Gol";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function Projects() {
+export default function Projects({ active, setActive }) {
   const [carousel, setCarousel] = useState(0);
+
   function goForward() {
-    if (carousel < 2) setCarousel(carousel + 1);
+    if (carousel < 4) setCarousel(carousel + 1);
     else setCarousel(0);
   }
 
   function goBack() {
     if (carousel > 0) setCarousel(carousel - 1);
-    else setCarousel(2);
+    else setCarousel(4);
   }
 
   useEffect(() => {
@@ -48,8 +51,12 @@ export default function Projects() {
             <SortViz />
           ) : carousel === 1 ? (
             <TeamReel />
-          ) : (
+          ) : carousel === 2 ? (
+            <Flatten />
+          ) : carousel === 3 ? (
             <SleepTracker />
+          ) : (
+            <Gol />
           )}
         </div>
       </div>

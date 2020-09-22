@@ -10,13 +10,22 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const [active, setActive] = useState({
+    about: false,
+    projects: false,
+    contact: false,
+  });
   return (
     <Router>
       <div className="App">
         <Route exact path="/" component={Main} />
         <Route
           path="/"
-          render={(props) => props.location.pathname !== "/" && <Header />}
+          render={(props) =>
+            props.location.pathname !== "/" && (
+              <Header active={active} setActive={setActive} />
+            )
+          }
         ></Route>
         <Route exact path="/contact">
           <Contact />

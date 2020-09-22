@@ -1,12 +1,27 @@
 import React from "react";
-import sortViz1 from "../images/sortviz1.mov";
+import sortViz1 from "../images/Team_Reel.mp4";
 
 export default function TeamReel() {
   return (
     <div>
       <div className="sort_viz">
-        <div>
-          <h3>TeamReel</h3>
+        <div className="tech_container">
+          <h3 style={{ textAlign: "center", padding: "0" }}>TeamReel</h3>
+          <div className="stack_header">
+            <div className="stack_wrapper">
+              <h5 className="title_text">Tech Stack: </h5>
+              <span className="skills_list">
+                Javascript | React | Redux | Node.JS | Express | PostgreSQL |
+                Knex | Okta/OAuth2 | Ant Design | FFMPEG | AWS
+              </span>
+            </div>
+            <div className="stack_wrapper">
+              <h5 className="title_text">Links: </h5>
+              <span className="skills_list">
+                Github Repo | Not Currently Deployed
+              </span>
+            </div>
+          </div>
         </div>
         <div
           style={{

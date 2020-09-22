@@ -91,7 +91,7 @@ export default function MobileMain() {
                 typewriter
 
                   .typeString(
-                    "Hi! I'm Chris Giroux. A passionate Full Stack Developer from Maryland. I have an insatiable desire to learn something new everyday!"
+                    "Hi! I'm Chris Giroux, a passionate Full Stack Developer from Maryland. I have an insatiable desire to learn something new everyday!"
                   )
                   .start();
               }}
