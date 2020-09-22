@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import MobileMain from "./MobileMain";
 
-export default function Main() {
+export default function Main({ resume }) {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     gsap.from(".img_animation", {
@@ -65,8 +65,9 @@ export default function Main() {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  "Hi! I'm Chris Giroux, a passionate Full Stack Developer from Maryland."
+                  "Hi! I'm Chris Giroux, A passionate Full Stack Developer from Maryland."
                 )
+                .typeString()
                 .start();
             }}
           />
@@ -83,7 +84,9 @@ export default function Main() {
           />
         </div>
       </div>
-      <div className="resume_main">Download CV</div>
+      <a className="resume_main" href={resume} download="cgiroux_cv">
+        Download CV
+      </a>
       <div className="main_connect">
         <FontAwesomeIcon icon={faGithub} />
         <FontAwesomeIcon style={{ color: "navy" }} icon={faLinkedinIn} />
