@@ -14,7 +14,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import resume from "../images/new_resume.pdf";
+import resume from "../images/CGiroux_Resume.pdf";
 
 export default function MobileMain() {
   return (
