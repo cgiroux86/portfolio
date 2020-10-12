@@ -51,13 +51,16 @@ export default function Skills() {
         <div className="about_text">
           <h4 style={{ textAlign: "center" }}>About Me</h4>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
+            Hi! I'm Chris Giroux, a Full Stack Software Engineer from Maryland.
+            I have an insatiable desire to learn something new everyday. My
+            journey to finding my passion in Full Stack Development has been
+            unique. I've spent time as a Poker Player, fostering an interest in
+            studying game theory, combinatorics, and probabilities. I also spent
+            time as an Electrician, which helped build the foundation for my
+            work ethic. I overcame a life threatening medical condition, which
+            rejuvenated my outlook on life. I have a strong conviction that all
+            of my life experiences have beautifully lead me to discovering my
+            passion for Full Stack Development. I strive to make everyday count!
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import resume from "./images/new_resume.pdf";
+import resume from "./images/CGiroux_Resume.pdf";
 
 function App() {
   const [active, setActive] = useState({
