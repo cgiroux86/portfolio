@@ -59,16 +59,16 @@ export default function Main({ resume }) {
           </div>
         </div>
         <div className="hello">
-          <Typewriter
+          {/* <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString(
-                  "Hi! I'm Chris Giroux, A passionate Full Stack Developer from Maryland."
-                )
+                .typeString( */}
+          Hi! I'm Chris Giroux, A passionate Full Stack Developer from Maryland.
+          {/* )
                 .typeString()
-                .start();
-            }}
-          />
+                .start(); */}
+          {/* }} */}
+          {/* /> */}
         </div>
         <div className="hello_text">
           <Typewriter
