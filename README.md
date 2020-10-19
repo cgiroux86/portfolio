@@ -16,7 +16,8 @@ I wanted a centralized place to showcase my personal projects and provide more d
 <br/>
 <br/>
 <br/>
-![Screen Shot 2020-10-19 at 8 36 58 AM](https://user-images.githubusercontent.com/59579733/96451927-4b651c80-11e6-11eb-82bf-7cdfad59703c.png)
+![Screen Shot 2020-10-19 at 8 36 58 AM](https://user-images.githubusercontent.com/59579733/96452081-80716f00-11e6-11eb-9757-fa3729870b44.png)
+
 
 
 ## Tech/framework used
