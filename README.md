@@ -11,9 +11,8 @@ I wanted a centralized place to showcase my personal projects and provide more d
 ## Screenshots
 <div display='flex'>![Screen Shot 2020-10-19 at 8 36 58 AM](https://user-images.githubusercontent.com/59579733/96452081-80716f00-11e6-11eb-9757-fa3729870b44.png)
 ![Screen Shot 2020-10-19 at 8 33 49 AM](https://user-images.githubusercontent.com/59579733/96451746-0c36cb80-11e6-11eb-88ea-aeb943ad83c1.png)
-
-<br/></div>
-
+</div>
+<br/>
 <br/>
 <br/>
 
